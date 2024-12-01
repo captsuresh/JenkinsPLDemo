@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Job Seed') {
+            steps {
+                echo 'Hello Job'
+            }
+        }
+        stage('Job Build') {
+            steps {
+                echo 'Job Buliding'
+            }
+        }
+        stage('Job Deploy') {
+            steps {
+                echo 'Job Deploying'
+            }
+        }
+        stage('Job Test') {
+            steps {
+                echo 'Job Testing'
+            }
+        }
+        stage('Job Release') {
+            steps {
+                echo 'Job Releasing'
+            }
+        }
+    }
+}
